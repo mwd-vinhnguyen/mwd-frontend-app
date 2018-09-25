@@ -90,7 +90,7 @@ function dependencyHandlers() {
 
   const dllPath = path.resolve(
     process.cwd(),
-    dllPlugin.path || 'node_modules/react-boilerplate-dlls',
+    dllPlugin.path || 'node_modules/mwd-fronted-app-dlls',
   );
 
   /**

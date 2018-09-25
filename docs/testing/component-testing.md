@@ -38,7 +38,7 @@ function Button(props) {
 export default Button;
 ```
 
-_Note: This is a [state**less** ("dumb") component](../js/README.md#architecture-components-and-containers)_
+_Note: This is a [state**less** ("dumb") component](../js/README.md#architecture-components-and-features)_
 
 It might be used in another component like this:
 
@@ -54,7 +54,7 @@ class HomePage extends React.Component {
 }
 ```
 
-_Note: This is a [state**ful** ("smart") component](../js/README.md#architecture-components-and-containers)!_
+_Note: This is a [state**ful** ("smart") component](../js/README.md#architecture-components-and-features)!_
 
 When rendered normally with the standard `ReactDOM.render` function, this will
 be the HTML output

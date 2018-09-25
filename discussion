@@ -1,0 +1,58 @@
+1. The huong Features
+2. Ko phuoc thuoc vao UI lib
+3. Support Responsive 
+4. Support Localzation
+
+////Implement
+* Ops:
+1. Webpack
+2. Babel
+3. ESlint
+
+* Techs:
+0. react/redux
+1. ES6
+2. JSX
+3. i18n
+4. a11y
+5. bootstrap
+6. redux-saga
+7. reselect
+8. whatwg-fetch
+9. immutable
+10. lodash
+11. react-router-redux
+12. sass
+
+* Folders Structure
+
+- packages
+- ui-theme
+- app
+    - index.html
+    - app.js 
+    - rootReducers.js
+    - configStore.js
+    - utils
+        - i18n
+    - tests
+    - media
+    - features
+        - App
+        - Login
+            - features
+            - components
+            - tests
+            - constants
+            - selectors
+            - reduces 
+            - actions
+            - sagas
+            - index.js
+        - Signup
+    - 
+- config
+- docs
+- dist
+
+

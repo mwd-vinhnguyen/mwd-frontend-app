@@ -1,17 +1,17 @@
 {
-  "name": "react-boilerplate",
+  "name": "mwd-frontend-app",
   "version": "3.6.0",
   "description": "A highly scalable, offline-first foundation with the best DX and a focus on performance and best practices",
   "repository": {
     "type": "git",
-    "url": "git://github.com/react-boilerplate/react-boilerplate.git"
+    "url": ""
   },
   "engines": {
     "npm": ">=5",
     "node": ">=8"
   },
-  "author": "Max Stoiber",
-  "license": "MIT",
+  "author": "",
+  "license": "",
   "scripts": {
     "analyze:clean": "rimraf stats.json",
     "preanalyze": "npm run analyze:clean",
@@ -92,7 +92,7 @@
     }
   },
   "dllPlugin": {
-    "path": "node_modules/react-boilerplate-dlls",
+    "path": "node_modules/mwd-fronted-app-dlls",
     "exclude": [
       "chalk",
       "compression",

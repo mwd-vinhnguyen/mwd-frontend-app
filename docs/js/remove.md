@@ -36,9 +36,9 @@ If you really want to get rid of it, you will have to remove its presence from s
 1.  Remove `expect(() => checkStore({ ...store, injectedSagas: null })).toThrow();`
 2.  Remove `expect(() => checkStore({ ...store, runSaga: null })).toThrow();`
 
-**app/containers/\*/index.js**
+**app/features/\*/index.js**
 
-Clean up containers that inject a dynamic saga
+Clean up features that inject a dynamic saga
 
 1.  Remove saga injections like: `const withSaga = injectSaga({ key: 'home', saga });`.
 
@@ -57,7 +57,7 @@ your `mapStateToProps` functions like you normally would!
 
 You'll also need to hook up the history directly to the store. Make changes to `app/app.js`.
 
-1.  Remove statement `import { makeSelectLocationState } from 'containers/App/selectors'`
+1.  Remove statement `import { makeSelectLocationState } from 'features/App/selectors'`
 2.  Make necessary changes to `history` as follows:
 
 ```js

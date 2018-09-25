@@ -39,7 +39,7 @@ Confirm/adjust eslint-config-airbnb compatible [dependency versions](https://www
 
 ### Pinned Version Numbers
 
-`react-boilerplate` does not use "^", "~", etc., and these should be removed from `package.json`, if present. See [#598](https://github.com/react-boilerplate/react-boilerplate/issues/598) for more details.
+`mwd-fronted-app` does not use "^", "~", etc., and these should be removed from `package.json`, if present. See [#598](https://github.com/mwd-fronted-app/mwd-fronted-app/issues/598) for more details.
 
 At this point, you should copy and paste the version diff from the terminal into your `Update Log`.
 
@@ -75,7 +75,7 @@ Identify problems that occur and try to resolve them by rolling back the respect
 - Add a new route in the App container:
 
 ```js
-import TestPage from 'containers/TestPage/Loadable';
+import TestPage from 'features/TestPage/Loadable';
 
 <Route path="/test" component={TestPage} />;
 ```
@@ -222,7 +222,7 @@ react-test-renderer                                     15.5.4
 ```bash
    ERROR in ./~/react-router-scroll/lib/StateStorage.js
    Module not found: Error: Can't resolve 'history/lib/DOMStateStorage' in '
-   /home/travis/build/gihrig/react-boilerplate/node_modules/react-router-scroll/lib'
+   /home/travis/build/gihrig/mwd-fronted-app/node_modules/react-router-scroll/lib'
     @ ./~/react-router-scroll/lib/StateStorage.js 5:23-61
     @ ./~/react-router-scroll/lib/ScrollBehaviorContext.js
     @ ./~/react-router-scroll/lib/useScroll.js
@@ -233,7 +233,7 @@ react-test-renderer                                     15.5.4
 
 - `history` Incompatible
 
-  react-boilerplate@3.4.0 /Users/glen/Documents/JavaScript/Research/react-bp
+  mwd-fronted-app@3.4.0 /Users/glen/Documents/JavaScript/Research/react-bp
   └── UNMET PEER DEPENDENCY history@4.5.1
 
   npm ERR! peer dep missing: history@^2.0.0 || ^3.0.0, required by react-router-scroll@0.4.1
@@ -248,24 +248,24 @@ Addressed here https://github.com/imagemin/imagemin-pngquant/issues/32 **_Needs 
 
   In ./app/components/Header/banner.jpg
   Module build failed: Error: dyld: Library not loaded: /usr/local/opt/libpng/lib/libpng16.16.dylib
-  Referenced from: ~/react-boilerplate/node_modules/mozjpeg/vendor/cjpeg
+  Referenced from: ~/mwd-fronted-app/node_modules/mozjpeg/vendor/cjpeg
   Reason: image not found
 
   **_image-webpack-loader 2.0.0 → 3.0.0 <--- rolled back_**
-  see: https://github.com/mxstbr/react-boilerplate/pull/1322#issuecomment-266264527 and #1335
+  see: https://github.com/mxstbr/mwd-fronted-app/pull/1322#issuecomment-266264527 and #1335
 
 - Warning: Observed on `npm start`
 
   WARNING in ./app/components/Header/banner.jpg
   DEPRECATED. Configure gifsicle's interlaced option in it's own options. (gifsicle.interlaced)
   @ ./app/components/Header/index.js 47:0-34
-  @ ./app/containers/App/index.js
+  @ ./app/features/App/index.js
   @ ./app/app.js
   @ multi eventsource-polyfill webpack-hot-middleware/client?reload=true ./app/app.js
   WARNING in ./app/components/Header/banner.jpg
   DEPRECATED. Configure optipng's optimizationLevel option in it's own options. (optipng.optimizationLevel)
   @ ./app/components/Header/index.js 47:0-34
-  @ ./app/containers/App/index.js
+  @ ./app/features/App/index.js
   @ ./app/app.js
   @ multi eventsource-polyfill webpack-hot-middleware/client?reload=true ./app/app.js
 

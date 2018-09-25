@@ -40,7 +40,7 @@ const myComplexSelector = createSelector(mySelector, myState =>
 export { myComplexSelector };
 ```
 
-These selectors can then either be used directly in our containers as
+These selectors can then either be used directly in our features as
 `mapStateToProps` functions or be nested with `createSelector` once again:
 
 ```javascript

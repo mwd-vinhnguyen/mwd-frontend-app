@@ -1,5 +1,5 @@
 /**
- * This script is for internal `react-boilerplate`'s usage. The only purpose of generating all of these templates is
+ * This script is for internal `mwd-fronted-app`'s usage. The only purpose of generating all of these templates is
  * to be able to lint them and detect critical errors. Every generated component's name has to start with
  * 'RbGenerated' so it can be easily excluded from the test coverage reports.
  */
@@ -72,8 +72,8 @@ componentGen
   .then(removeTestsDirFrom('components/RbGeneratedComponentStatelessfunction'))
   .catch(reportErrorsFor('component/Stateless Function'));
 
-const containerGen = plop.getGenerator('container');
-containerGen
+const featureGen = plop.getGenerator('feature');
+featureGen
   .runActions({
     name: 'RbGeneratedContainerPureComponent',
     type: 'React.PureComponent',
@@ -84,10 +84,10 @@ containerGen
     wantLoadable: true,
   })
   .then(checkForErrors)
-  .then(removeTestsDirFrom('containers/RbGeneratedContainerPureComponent'))
-  .catch(reportErrorsFor('container/React.PureComponent'));
+  .then(removeTestsDirFrom('features/RbGeneratedContainerPureComponent'))
+  .catch(reportErrorsFor('feature/React.PureComponent'));
 
-containerGen
+featureGen
   .runActions({
     name: 'RbGeneratedContainerComponent',
     type: 'React.Component',
@@ -98,12 +98,12 @@ containerGen
     wantLoadable: true,
   })
   .then(checkForErrors)
-  .then(removeTestsDirFrom('containers/RbGeneratedContainerComponent'))
-  .catch(reportErrorsFor('container/React.Component'));
+  .then(removeTestsDirFrom('features/RbGeneratedContainerComponent'))
+  .catch(reportErrorsFor('feature/React.Component'));
 
-containerGen
+featureGen
   .runActions({
-    name: 'RbGeneratedContainerStateless',
+    name: 'RbGeneratedfeaturestateless',
     type: 'Stateless Function',
     wantHeaders: true,
     wantActionsAndReducer: true,
@@ -112,8 +112,8 @@ containerGen
     wantLoadable: true,
   })
   .then(checkForErrors)
-  .then(removeTestsDirFrom('containers/RbGeneratedContainerStateless'))
-  .catch(reportErrorsFor('container/Stateless'));
+  .then(removeTestsDirFrom('features/RbGeneratedfeaturestateless'))
+  .catch(reportErrorsFor('feature/Stateless'));
 
 const languageGen = plop.getGenerator('language');
 languageGen.runActions({ language: 'fr' }).catch(reportErrorsFor('language'));

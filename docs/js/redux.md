@@ -45,7 +45,7 @@ that's necessary.
 
 To get you started on a login flow, there's a great example [here](https://github.com/tinavanschelt/recycled-login-flow).
 
-**Note:** Based off of react-boilerplate **v3.4**
+**Note:** Based off of mwd-fronted-app **v3.4**
 
 ## Removing redux
 

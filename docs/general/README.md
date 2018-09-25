@@ -21,7 +21,7 @@ efficient tooling and cleanest project structure.
 
 ## Quick scaffolding
 
-Automate the creation of components, containers, routes, selectors and sagas -
+Automate the creation of components, features, routes, selectors and sagas -
 and their tests - right from the CLI!
 
 Run `npm run generate` in your terminal and choose one of the parts you want
@@ -109,7 +109,7 @@ could already read the content.
 
 [FontFaceObserver](https://github.com/bramstein/fontfaceobserver) adds a class
 to the `body` when the fonts have loaded. (see [`app.js`](../../app/app.js#L26-L36)
-and [`App/styles.css`](../../app/containers/App/styles.css))
+and [`App/styles.css`](../../app/features/App/styles.css))
 
 ### Adding a new font
 

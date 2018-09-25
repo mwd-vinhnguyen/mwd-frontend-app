@@ -10,14 +10,14 @@ import { useScroll } from 'react-router-scroll';
 -import 'sanitize.css/sanitize.css';
 
 // Import root app
-import App from 'containers/App';
+import App from 'features/App';
 ```
 
 - [`package.json`](../../package.json)!
 
 ```diff
 "dllPlugin": {
-  "path": "node_modules/react-boilerplate-dlls",
+  "path": "node_modules/mwd-fronted-app-dlls",
   "exclude": [
     ...
     "ip",
